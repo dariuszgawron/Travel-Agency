@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- FAVICON -->
 
     <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- SWIPER -->
 
@@ -17,6 +20,7 @@
 
     <title>Travel Agency</title>
 </head>
+
 <body>
     <!-- HEADER -->
     <header class="header header--fixed">
@@ -28,32 +32,31 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__list-item">
-                        <a href="#" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link">Home</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__link">About</a>
+                        <a href="#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__link">Destination</a>
+                        <a href="#destination" class="nav__link">Destination</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__link">Services</a>
+                        <a href="#services" class="nav__link">Services</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__link">Gallery</a>
+                        <a href="#gallery" class="nav__link">Gallery</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__link">Blogs</a>
+                        <a href="#blog" class="nav__link">Blogs</a>
                     </li>
                 </ul>
                 <div class="nav__close" id="nav-close">
-                    <i></i>
+                    <i class="fa-solid fa-xmark"></i>
                 </div>
             </div>
             <a href="#" class="button">
                 Book now
             </a>
-
         </nav>
     </header>
 
@@ -69,7 +72,8 @@
                     To the unknown
                 </h1>
                 <p class="home__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
                 <button class="button home__button">
                     Book now
@@ -99,7 +103,8 @@
                         Nature's majesty awaits you
                     </h2>
                     <p class="about__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
                     </p>
                     <a href="#" class="button">
                         Read more
@@ -110,118 +115,134 @@
 
         <!-- DESTINATIONS -->
         <section class="destination section container" id="destinations">
-            <h3 class="section__subtitle section__subtitle--primary">
+            <h3 class="section__subtitle section__title--center section__subtitle--primary">
                 Our destinations
             </h3>
-            <h2 class="section__title">
+            <h2 class="section__title section__title--center">
                 Make yours destination
             </h2>
             <div class="destination__container">
                 <div class="destination__card">
                     <img src="assets/img/destination1.jpg" alt="" class="destination__img">
-                    <h3 class="destination__title">
-                        Tours & Travel
-                    </h3>
-                    <p class="destination__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="#" class="destination__link">
-                        Read more <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                    <div class="destination__data">
+                        <h3 class="destination__title">
+                            Tours & Travel
+                        </h3>
+                        <p class="destination__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <a href="#" class="destination__link">
+                            Read more <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="destination__card">
                     <img src="assets/img/destination2.jpg" alt="" class="destination__img">
-                    <h3 class="destination__title">
-                        Tours & Travel
-                    </h3>
-                    <p class="destination__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="#" class="destination__link">
-                        Read more <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                    <div class="destination__data">
+                        <h3 class="destination__title">
+                            Tours & Travel
+                        </h3>
+                        <p class="destination__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <a href="#" class="destination__link">
+                            Read more <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="destination__card">
                     <img src="assets/img/destination3.jpg" alt="" class="destination__img">
-                    <h3 class="destination__title">
-                        Tours & Travel
-                    </h3>
-                    <p class="destination__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="#" class="destination__link">
-                        Read more <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                    <div class="destination__data">
+                        <h3 class="destination__title">
+                            Tours & Travel
+                        </h3>
+                        <p class="destination__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <a href="#" class="destination__link">
+                            Read more <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="destination__card">
                     <img src="assets/img/destination4.jpg" alt="" class="destination__img">
-                    <h3 class="destination__title">
-                        Tours & Travel
-                    </h3>
-                    <p class="destination__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="#" class="destination__link">
-                        Read more <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                    <div class="destination__data">
+                        <h3 class="destination__title">
+                            Tours & Travel
+                        </h3>
+                        <p class="destination__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <a href="#" class="destination__link">
+                            Read more <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="destination__card">
                     <img src="assets/img/destination5.jpg" alt="" class="destination__img">
-                    <h3 class="destination__title">
-                        Tours & Travel
-                    </h3>
-                    <p class="destination__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="#" class="destination__link">
-                        Read more <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                    <div class="destination__data">
+                        <h3 class="destination__title">
+                            Tours & Travel
+                        </h3>
+                        <p class="destination__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <a href="#" class="destination__link">
+                            Read more <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="destination__card">
                     <img src="assets/img/destination6.jpg" alt="" class="destination__img">
-                    <h3 class="destination__title">
-                        Tours & Travel
-                    </h3>
-                    <p class="destination__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="#" class="destination__link">
-                        Read more <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                    <div class="destination__data">
+                        <h3 class="destination__title">
+                            Tours & Travel
+                        </h3>
+                        <p class="destination__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <a href="#" class="destination__link">
+                            Read more <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="destination__card">
                     <img src="assets/img/destination7.jpg" alt="" class="destination__img">
-                    <h3 class="destination__title">
-                        Tours & Travel
-                    </h3>
-                    <p class="destination__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="#" class="destination__link">
-                        Read more <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                    <div class="destination__data">
+                        <h3 class="destination__title">
+                            Tours & Travel
+                        </h3>
+                        <p class="destination__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <a href="#" class="destination__link">
+                            Read more <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="destination__card">
                     <img src="assets/img/destination8.jpg" alt="" class="destination__img">
-                    <h3 class="destination__title">
-                        Tours & Travel
-                    </h3>
-                    <p class="destination__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="#" class="destination__link">
-                        Read more <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                    <div class="destination__data">
+                        <h3 class="destination__title">
+                            Tours & Travel
+                        </h3>
+                        <p class="destination__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <a href="#" class="destination__link">
+                            Read more <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- SERVICES -->
         <section class="services section container" id="services">
-            <h3 class="section__subtitle section__subtitle--primary">
+            <h3 class="section__subtitle section__subtitle--center section__subtitle--primary">
                 Our services
             </h3>
-            <h2 class="section__title">
+            <h2 class="section__title section__title--center">
                 Countless experience
             </h2>
             <div class="services__container">
@@ -349,7 +370,9 @@
                     Good news from our clients
                 </h2>
                 <p class="testimonials__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
                 </p>
             </div>
             <div class="testimonials__container">
@@ -498,8 +521,9 @@
                 <h2 class="section__title">
                     Let's explore this world
                 </h2>
-                <p class="section__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                <p class="adventure__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <a href="#" class="button">
                     Book now
@@ -600,4 +624,5 @@
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
