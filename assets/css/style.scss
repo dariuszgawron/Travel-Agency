@@ -361,39 +361,60 @@ button {
 
 // TESTIMONIALS
 .testimonials {
+    display: grid;
+    row-gap: 1rem;
 
     &__data {
 
     }
 
     &__description {
-
+        font-size: var(--font-size-5);
     }
 
     &__container {
-
+        display: grid;
+        row-gap: 1rem;
     }
 
     &__card {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 1rem;
+        background-color: var(--background-color-secondary);
+        border: 2px solid var(--background-color-secondary);
+        border-radius: .5rem;
 
+        &:hover {
+            border: 2px solid var(--primary-color);
+        }
     }
 
     &__profile {
+        display: flex;
+        align-items: center;
+        column-gap: .8rem;
      
         &-img {
-
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
         }
 
         &-data {
-
+            display: flex;
+            flex-direction: column;
         }
 
         &-name {
-
+            font-size: var(--font-size-5);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-color-light);
         }
 
         &-title {
-
+            font-size: var(--font-size-6);
             &--primary {
                 color: var(--primary-color);
             }
@@ -405,44 +426,69 @@ button {
 .blogs {
 
     &__container {
-
+        display: grid;
+        row-gap: 1rem;
     }
 
     &__card {
+        overflow: hidden;
+        background-color: var(--background-color-secondary);
+        border-radius: 1rem;
 
+        // &:hover .blogs__img {
+        //     transform: scale(1.4);
+        //     transform-origin: 50% 50%;
+        //     transform-box: fill-box;
+        // }
     }
 
     &__img {
-
+        width: 100%;
+        // max-height: 100%;
+        // overflow: hidden;
+        transition: .4s;
     }
 
     &__data {
-
+        padding: .8rem;
     }
 
     &__title {
-
+        margin-bottom: .6rem;
+        font-size: var(--font-size-4);
+        font-weight: var(--font-weight-medium);
+        color: var(--text-color-light);
     }
 
     &__description {
-        
+        margin-bottom: .8rem;
+        font-size: var(--font-size-6);
+        color: var(--text-color-dark);
     }
 
     &__footer {
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__date {
+        font-size: var(--font-size-7);
+        color: var(--text-color-dark);
 
         &-icon {
-
+            margin-right: .2rem;
+            color: var(--primary-color);
         }
     }
 
     &__author {
+        font-size: var(--font-size-7);
+        color: var(--text-color-dark);
 
         &-icon {
-
+            margin-right: .2rem;
+            color: var(--primary-color);
         }
     }
 }
@@ -451,11 +497,16 @@ button {
 .adventure {
 
     &__container {
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__description {
-
+        margin-bottom: 1rem;
+        font-size: var(--font-size-5);
+        color: var(--text-color-dark);
+        text-align: center;
     }
 }
 
@@ -464,7 +515,8 @@ button {
 .footer {
 
     &__container {
-
+        display: grid;
+        row-gap: 1.5rem;
     }
 
     &__data {
@@ -472,14 +524,20 @@ button {
     }
 
     &__subtitle {
-
+        margin-bottom: .8rem;
+        font-size: var(--font-size-4);
+        color: var(--text-color-light);
     }
 
     &__description {
-
+        margin-bottom: .8rem;
+        font-size: var(--font-size-7);
+        color: var(--text-color-light);
     }
 
     &__social {
+        display: flex;
+        column-gap: .4rem;
 
         &-link {
 
@@ -491,6 +549,9 @@ button {
     }
 
     &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: .7rem;
 
         &-item {
 
@@ -498,7 +559,12 @@ button {
     }
 
     &__link {
+        font-size: var(--font-size-6);
+        color: var(--text-color-light);
 
+        &:hover {
+            color: var(--primary-color);
+        }
     }
 
     &__subscribe {

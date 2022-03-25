@@ -298,7 +298,212 @@ button {
   color: var(--text-color-dark);
 }
 
+.testimonials {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.testimonials__description {
+  font-size: var(--font-size-5);
+}
+
+.testimonials__container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.testimonials__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
+  background-color: var(--background-color-secondary);
+  border: 2px solid var(--background-color-secondary);
+  border-radius: .5rem;
+}
+
+.testimonials__card:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.testimonials__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: .8rem;
+          column-gap: .8rem;
+}
+
+.testimonials__profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.testimonials__profile-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonials__profile-name {
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color-light);
+}
+
+.testimonials__profile-title {
+  font-size: var(--font-size-6);
+}
+
 .testimonials__profile-title--primary {
+  color: var(--primary-color);
+}
+
+.blogs__container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.blogs__card {
+  overflow: hidden;
+  background-color: var(--background-color-secondary);
+  border-radius: 1rem;
+}
+
+.blogs__img {
+  width: 100%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.blogs__data {
+  padding: .8rem;
+}
+
+.blogs__title {
+  margin-bottom: .6rem;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color-light);
+}
+
+.blogs__description {
+  margin-bottom: .8rem;
+  font-size: var(--font-size-6);
+  color: var(--text-color-dark);
+}
+
+.blogs__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blogs__date {
+  font-size: var(--font-size-7);
+  color: var(--text-color-dark);
+}
+
+.blogs__date-icon {
+  margin-right: .2rem;
+  color: var(--primary-color);
+}
+
+.blogs__author {
+  font-size: var(--font-size-7);
+  color: var(--text-color-dark);
+}
+
+.blogs__author-icon {
+  margin-right: .2rem;
+  color: var(--primary-color);
+}
+
+.adventure__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adventure__description {
+  margin-bottom: 1rem;
+  font-size: var(--font-size-5);
+  color: var(--text-color-dark);
+  text-align: center;
+}
+
+.footer__container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.footer__subtitle {
+  margin-bottom: .8rem;
+  font-size: var(--font-size-4);
+  color: var(--text-color-light);
+}
+
+.footer__description {
+  margin-bottom: .8rem;
+  font-size: var(--font-size-7);
+  color: var(--text-color-light);
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: .4rem;
+          column-gap: .4rem;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: .7rem;
+}
+
+.footer__link {
+  font-size: var(--font-size-6);
+  color: var(--text-color-light);
+}
+
+.footer__link:hover {
   color: var(--primary-color);
 }
 /*# sourceMappingURL=style.css.map */
