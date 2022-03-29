@@ -14,6 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- SWIPER -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -47,7 +48,7 @@
                         <a href="#gallery" class="nav__link">Gallery</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#blog" class="nav__link">Blogs</a>
+                        <a href="#blogs" class="nav__link">Blogs</a>
                     </li>
                 </ul>
                 <!-- <div class="nav__close" id="nav-close">
@@ -90,9 +91,20 @@
         <section class="search container">
             <div class="search__container">
                 <form action="#" class="search__form">
-                    <input type="text" placeholder="Place name" class="input search__input">
-                    <input type="date" class="input search__input">
-                    <input type="number" placeholder="Number of tourists" class="input search__input">
+                    <div class="search__content">
+                        <label class="search__label" for="place">Where to?</label>
+                        <input name="place" type="text" placeholder="Place name" class="input search__input">
+                    </div>
+                    <div class="search__content">
+                        <label class="search__label" for="date">When?</label>
+                        <input name="date" type="date" class="input search__input">
+                    </div>
+                    <div class="search__content">
+                        <label class="search__label" for="tourists">How many?</label>
+                        <input name="tourists" type="number" placeholder="Number of tourists"
+                            class="input search__input">
+                    </div>
+
                     <button class="button" type="submit">
                         Find now
                     </button>
@@ -103,7 +115,18 @@
         <!-- ABOUT -->
         <section class="about section container" id="about">
             <div class="about__container">
-                <img src="assets/img/about1.jpg" alt="" class="about__img">
+                <div class="swiper about__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide about__card">
+                            <img src="assets/img/about1.jpg" alt="" class="about__img">
+                        </div>
+                        <div class="swiper-slide about__card">
+                            <img src="assets/img/about2.jpg" alt="" class="about__img">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination about__swiper-pagination"></div>
+                </div>
+                
                 <div class="about__data">
                     <h3 class="section__subtitle section__subtitle--primary">
                         Why choose us
@@ -123,7 +146,7 @@
         </section>
 
         <!-- DESTINATIONS -->
-        <section class="destination section container" id="destinations">
+        <section class="destination section container" id="destination">
             <h3 class="section__subtitle section__title--center section__subtitle--primary">
                 Our destinations
             </h3>
@@ -469,7 +492,7 @@
         </section>
 
         <!-- BLOGS -->
-        <section class="blogs section container">
+        <section class="blogs section container" id="blogs">
             <h3 class="section__subtitle section__subtitle--center section__subtitle--primary">
                 Blogs & posts
             </h3>
@@ -651,6 +674,12 @@
             &#169; Dariusz Gawron. All rights reserved.
         </p>
     </footer>
+
+    <!-- SCROLLREVEAL -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>

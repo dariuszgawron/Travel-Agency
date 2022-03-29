@@ -14,3 +14,29 @@ navLinks.forEach(navLink => {
         navMenu.classList.remove('nav__menu--show');
     })
 });
+
+// SWIPER
+const aboutSwiper = new Swiper(".about__swiper", {
+    spaceBetween: 10,
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        // bulletClass: 'about__swiper-pagination'
+    }
+    
+})
+
+// SCROLLREVEAL
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '20px',
+    duration: 2000,
+    delay: 500
+});
+
