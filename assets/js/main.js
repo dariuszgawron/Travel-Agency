@@ -28,7 +28,6 @@ const aboutSwiper = new Swiper(".about__swiper", {
         el: '.swiper-pagination',
         clickable: true
     }
-    
 })
 
 // SCROLLREVEAL
